@@ -1,3 +1,5 @@
+<p align="center"><img src="plugins/treedis-tai/.claude-plugin/icon.png" alt="TAI" width="120"></p>
+
 # tai-plugin
 
 Treedis TAI for Claude: a Claude plugin for **customers** who use Claude (the
