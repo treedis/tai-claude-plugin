@@ -1,0 +1,14 @@
+{
+  "name": "treedis",
+  "owner": {
+    "name": "Treedis",
+    "url": "https://treedis.com"
+  },
+  "plugins": [
+    {
+      "name": "treedis-tai",
+      "source": "./",
+      "description": "Treedis TAI skills and the Treedis MCP connector for maintenance, quality and plant reports."
+    }
+  ]
+}
