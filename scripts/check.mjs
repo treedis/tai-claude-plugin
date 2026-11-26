@@ -12,20 +12,21 @@ const TOOL_REFERENCE = /`([a-z]+(?:_[a-z]+)*_(?:list|get|search|write|schema|ask
 const MIN_DESCRIPTION = 40;
 
 const json = (path) => JSON.parse(readFileSync(join(ROOT, path), 'utf8'));
+const PLUGIN = 'plugins/treedis-tai';
 const problems = [];
 
-const plugin = json('.claude-plugin/plugin.json');
+const plugin = json(`${PLUGIN}/.claude-plugin/plugin.json`);
 const marketplace = json('.claude-plugin/marketplace.json');
 const names = marketplace.plugins.map((entry) => entry.name);
 if (names.length !== 1 || names[0] !== plugin.name)
   problems.push(`marketplace lists ${names.join(', ')}, plugin is ${plugin.name}`);
 
-const server = json('.mcp.json').mcpServers?.treedis;
+const server = json(`${PLUGIN}/.mcp.json`).mcpServers?.treedis;
 if (server?.type !== 'http' || server?.url !== PUBLIC_MCP_URL)
   problems.push(`.mcp.json treedis must be http ${PUBLIC_MCP_URL}`);
 
 const tools = new Set(json('mcp-tools.json'));
-const skillsDir = join(ROOT, 'skills');
+const skillsDir = join(ROOT, PLUGIN, 'skills');
 for (const folder of readdirSync(skillsDir)) {
   const text = readFileSync(join(skillsDir, folder, 'SKILL.md'), 'utf8');
   const name = /^---\nname: ([a-z0-9-]+)\n/.exec(text)?.[1];

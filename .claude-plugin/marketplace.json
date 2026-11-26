@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "treedis-tai",
-      "source": "./",
+      "source": "./plugins/treedis-tai",
       "description": "Treedis TAI skills and the Treedis MCP connector for maintenance, quality and plant reports."
     }
   ]

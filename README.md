@@ -34,12 +34,14 @@ TAI Chat users get breakdown diagnosis inside TAI itself (`get_record` mode
 
 ## Files
 
-- `.claude-plugin/plugin.json`: the plugin manifest.
-- `.claude-plugin/marketplace.json`: a one-plugin marketplace. The repo root
-  is the marketplace root and the plugin root.
-- `.mcp.json`: the Treedis MCP server, `https://mcp.treedis.com/mcp`. The
+- `.claude-plugin/marketplace.json`: the marketplace. It lists one plugin,
+  `plugins/treedis-tai`.
+- `plugins/treedis-tai/`: the plugin itself, the folder the Claude directory
+  reads. Only manifest, icon, connector, skills, README and LICENSE go here:
+  the directory refuses scripts from an organization that is not Verified.
+- `plugins/treedis-tai/.mcp.json`: the Treedis MCP server, `https://mcp.treedis.com/mcp`. The
   user signs in with OAuth on first use.
-- `skills/<name>/SKILL.md`: the skills. They name MCP tools only by name.
+- `plugins/treedis-tai/skills/<name>/SKILL.md`: the skills. They name MCP tools only by name.
 - `mcp-tools.json`: the tool names of the MCP server (`backend/apps/mcp` in
   `treedis/cw`). `scripts/check.mjs` fails when a skill names a tool that is
   not in it. CI runs it on every pull request.
@@ -75,6 +77,7 @@ Then sign in to the Treedis connector with `/mcp`.
   member then signs in with their own Treedis account.
 - Claude plugin directory: an owner submits it at
   `https://claude.ai/directory/manage` after
-  `claude plugin validate . --strict` passes.
+  `claude plugin validate plugins/treedis-tai --strict` passes. Submit the
+  folder `plugins/treedis-tai`.
 - A customer who runs Treedis in its own AWS account changes the URL in
   `.mcp.json` to its own MCP host.
