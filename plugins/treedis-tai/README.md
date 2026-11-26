@@ -1,4 +1,4 @@
-# Treedis TAI for Claude
+# Treedis AI (TAI) for Claude
 
 The Treedis Connected Workers connector and four skills for maintenance, quality and plant reports.
 
