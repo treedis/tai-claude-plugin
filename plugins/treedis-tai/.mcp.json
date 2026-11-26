@@ -2,7 +2,7 @@
   "mcpServers": {
     "treedis": {
       "type": "http",
-      "url": "https://mcp.treedis.com/mcp"
+      "url": "https://treedis.com/mcp"
     }
   }
 }

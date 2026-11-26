@@ -23,7 +23,7 @@ TAI Chat users get breakdown diagnosis inside TAI itself (`get_record` mode
 - The plugin holds no code that runs on your machine. It has a connector and
   skill text only.
 - The connector talks only to the Treedis MCP server at
-  `https://mcp.treedis.com/mcp`, over HTTPS, signed in with the user's own
+  `https://treedis.com/mcp`, over HTTPS, signed in with the user's own
   Treedis account (OAuth). Each call reads or changes data in that user's
   Treedis Workspace, within that user's Treedis permissions.
 - What a skill reads (assets, sensor readings, alerts, work orders, manuals,
@@ -39,7 +39,7 @@ TAI Chat users get breakdown diagnosis inside TAI itself (`get_record` mode
 - `plugins/treedis-tai/`: the plugin itself, the folder the Claude directory
   reads. Only manifest, icon, connector, skills, README and LICENSE go here:
   the directory refuses scripts from an organization that is not Verified.
-- `plugins/treedis-tai/.mcp.json`: the Treedis MCP server, `https://mcp.treedis.com/mcp`. The
+- `plugins/treedis-tai/.mcp.json`: the Treedis MCP server, `https://treedis.com/mcp`. The
   user signs in with OAuth on first use.
 - `plugins/treedis-tai/skills/<name>/SKILL.md`: the skills. They name MCP tools only by name.
 - `mcp-tools.json`: the tool names of the MCP server (`backend/apps/mcp` in

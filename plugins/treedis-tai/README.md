@@ -14,7 +14,7 @@ The Treedis Connected Workers connector and four skills for maintenance, quality
 - The plugin holds no code that runs on your machine. It has a connector and
   skill text only.
 - The connector talks only to the Treedis MCP server at
-  `https://mcp.treedis.com/mcp`, over HTTPS, signed in with the user's own
+  `https://treedis.com/mcp`, over HTTPS, signed in with the user's own
   Treedis account (OAuth). Each call reads or changes data in that user's
   Treedis Workspace, within that user's Treedis permissions.
 - What a skill reads (assets, sensor readings, alerts, work orders, manuals,

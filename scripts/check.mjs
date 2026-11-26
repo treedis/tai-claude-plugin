@@ -5,7 +5,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname;
-const PUBLIC_MCP_URL = 'https://mcp.treedis.com/mcp';
+const PUBLIC_MCP_URL = 'https://treedis.com/mcp';
 // A backticked word that ends like a tool name: `asset_list`, `api_write_schema`.
 // Argument names (`asset_row_id`, `group_by`) end otherwise and are skipped.
 const TOOL_REFERENCE = /`([a-z]+(?:_[a-z]+)*_(?:list|get|search|write|schema|ask))`/g;
