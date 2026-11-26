@@ -1,5 +1,6 @@
 {
   "name": "treedis-tai",
+  "displayName": "Treedis TAI",
   "version": "0.1.0",
   "description": "Treedis TAI for Claude: diagnose a breakdown, report on a failed inspection, report on downtime and check the setup, from your Treedis Connected Workers assets, sensor readings, alerts, work orders, manuals and safety records.",
   "author": {
@@ -18,5 +19,8 @@
   ],
   "repository": "https://github.com/treedis/tai-plugin",
   "license": "MIT",
-  "privacyPolicyUrl": "https://treedis.com/privacy-policy/"
+  "privacyPolicyUrl": "https://treedis.com/privacy-policy/",
+  "documentationUrl": "https://github.com/treedis/tai-plugin/tree/main/plugins/treedis-tai#readme",
+  "supportUrl": "https://treedis.com/contact/",
+  "termsOfServiceUrl": "https://treedis.com/terms-of-use/"
 }
