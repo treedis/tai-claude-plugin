@@ -1,6 +1,6 @@
 <p align="center"><img src="plugins/treedis-tai/.claude-plugin/icon.png" alt="TAI" width="120"></p>
 
-# tai-plugin
+# tai-claude-plugin
 
 Treedis TAI for Claude: a Claude plugin for **customers** who use Claude (the
 Claude app, Cowork or Claude Code) with the Treedis MCP server. It bundles the
@@ -65,7 +65,7 @@ TAI Chat users get breakdown diagnosis inside TAI itself (`get_record` mode
 In Claude Code:
 
 ```
-/plugin marketplace add treedis/tai-plugin
+/plugin marketplace add treedis/tai-claude-plugin
 /plugin install treedis-tai@treedis
 ```
 

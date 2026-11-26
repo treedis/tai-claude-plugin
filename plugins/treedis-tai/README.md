@@ -28,7 +28,7 @@ The Treedis Connected Workers connector and four skills for maintenance, quality
 ## Install
 
 ```
-/plugin marketplace add treedis/tai-plugin
+/plugin marketplace add treedis/tai-claude-plugin
 /plugin install treedis-tai@treedis
 ```
 

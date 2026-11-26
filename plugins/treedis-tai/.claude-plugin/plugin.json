@@ -17,10 +17,10 @@
     "safety",
     "connected-workers"
   ],
-  "repository": "https://github.com/treedis/tai-plugin",
+  "repository": "https://github.com/treedis/tai-claude-plugin",
   "license": "MIT",
   "privacyPolicyUrl": "https://treedis.com/privacy-policy/",
-  "documentationUrl": "https://github.com/treedis/tai-plugin/tree/main/plugins/treedis-tai#readme",
+  "documentationUrl": "https://github.com/treedis/tai-claude-plugin/tree/main/plugins/treedis-tai#readme",
   "supportUrl": "https://treedis.com/contact/",
   "termsOfServiceUrl": "https://treedis.com/terms-of-use/"
 }
