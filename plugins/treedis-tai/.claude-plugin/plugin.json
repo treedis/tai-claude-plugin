@@ -1,7 +1,7 @@
 {
   "name": "treedis-tai",
   "displayName": "Treedis AI (TAI)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Treedis TAI for Claude: diagnose a breakdown, report on a failed inspection, report on downtime and check the setup, from your Treedis Connected Workers assets, sensor readings, alerts, work orders, manuals and safety records.",
   "author": {
     "name": "Treedis",
