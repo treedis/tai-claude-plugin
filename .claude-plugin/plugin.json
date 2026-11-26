@@ -16,5 +16,8 @@
     "safety",
     "connected-workers"
   ],
-  "repository": "https://github.com/treedis/tai-plugin"
+  "repository": "https://github.com/treedis/tai-plugin",
+  "license": "MIT",
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://treedis.com/privacy-policy/"
 }

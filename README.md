@@ -18,6 +18,20 @@ This is not the internal skills repo. Skills for Treedis staff live in
 TAI Chat users get breakdown diagnosis inside TAI itself (`get_record` mode
 `diagnose` in the `cw` repo).
 
+## Data it sends
+
+- The plugin holds no code that runs on your machine. It has a connector and
+  skill text only.
+- The connector talks only to the Treedis MCP server at
+  `https://mcp.treedis.com/mcp`, over HTTPS, signed in with the user's own
+  Treedis account (OAuth). Each call reads or changes data in that user's
+  Treedis Workspace, within that user's Treedis permissions.
+- What a skill reads (assets, sensor readings, alerts, work orders, manuals,
+  safety records) goes into the user's Claude conversation, so Claude can
+  answer. A write (a work request or a CAPA) runs only after the user says yes.
+- The plugin sends nothing to any other service. Treedis privacy policy:
+  https://treedis.com/privacy-policy/
+
 ## Files
 
 - `.claude-plugin/plugin.json`: the plugin manifest.

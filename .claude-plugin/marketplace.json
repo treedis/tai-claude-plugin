@@ -1,5 +1,6 @@
 {
   "name": "treedis",
+  "description": "Treedis plugins for Claude: TAI skills and the Treedis Connected Workers MCP connector.",
   "owner": {
     "name": "Treedis",
     "url": "https://treedis.com"
